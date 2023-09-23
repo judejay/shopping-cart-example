@@ -3,7 +3,8 @@ import {
   CHECKOUT_REQUEST,
   CHECKOUT_FAILURE,
   REMOVE_FROM_CART,
-  CHANGE_QTY
+  CHANGE_QTY,
+  REDUCE_FROM_CART
 } from '../constants/ActionTypes'
 
 const initialState = {
@@ -42,10 +43,13 @@ const quantityById = (state = initialState.quantityById, action) => {
       }
       break
     }
-
+   case REDUCE_FROM_CART:
+  return {...state,
+    [productId]: (state[productId] -1)
+  }
     case REMOVE_FROM_CART:
       return {...state,
-        [productId]: 0
+        [productId]: (state[productId] -1)
       }
       case CHANGE_QTY:
         return {...state,

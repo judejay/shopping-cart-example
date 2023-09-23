@@ -1,4 +1,5 @@
 export const ADD_TO_CART = 'ADD_TO_CART'
+export const REDUCE_FROM_CART = 'REDUCE_FROM_CART'
 export const CHANGE_QTY = 'CHANGE_QTY'
 export const REMOVE_FROM_CART = 'REMOVE_FROM_CART'
 export const CHECKOUT_REQUEST = 'CHECKOUT_REQUEST'
