@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import Product from './Product'
 
 const Cart  = ({ products, total, onCheckoutClicked, changeQty }) => {
-  //console.log("products", products)
   const hasProducts = products.length > 0
   const nodes = hasProducts ? (
     products.map(product =>
@@ -13,8 +12,7 @@ const Cart  = ({ products, total, onCheckoutClicked, changeQty }) => {
         quantity={product.quantity}
         inventory={product.inventory}
         key={product.id}
-        //onQtySelected={(val) => changeQty(product.id, val)}
-       // onRemoveFromCartClicked={()=>removeFromCart(product.id)}
+
 
       />
     )

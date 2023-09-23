@@ -12,11 +12,6 @@ Product.propTypes = {
   quantity: PropTypes.number,
   title: PropTypes.string,
   inventory: PropTypes.number,
-
- // onQtySelected: PropTypes.func.isRequired,
-  //onRemoveFromCartClicked: PropTypes.func.isRequired,
-
-
 }
 
 export default Product
